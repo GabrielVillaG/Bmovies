@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c6T-ap-bJu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="E2Z-EN-kqY">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="c6T-ap-bJu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="film" catalog="system" id="V8q-Hj-TG6"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vrb-3a-Elm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EKx-9x-SqU" kind="relationship" relationship="rootViewController" id="jPM-Xw-Kxh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ra-e1-m8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="826"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Yf-YY-kU1">
+            <objects>
+                <viewController id="EKx-9x-SqU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLb-4h-fcb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-bx-87f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starwars" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-uf-3wR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars: The Rise of SkyWalker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="IMA-9x-0Gr">
+                                        <rect key="frame" x="15" y="189" width="384" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="raN-96-vYK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="LZo-Gf-gMy">
+                                        <rect key="frame" x="15" y="295" width="384" height="143"/>
+                                        <string key="text">Hace mucho tiempo en una galaxia muy, muy lejana ¡Los muertos hablan! La galaxia ha escuchado una emisión misteriosa, una amenaza de VENGANZA en la siniestra voz del difunto EMPERADOR PALPATINE. LA GENERAL LEIA ORGANA envía agentes secretos para reunir inteligencia, mientras REY, la última esperanza de los Jedi, entrena para la batalla contra la diabólica PRIMERA ORDEN. Mientras tanto, el Líder Supremo KYLO REN se enfurece en busca del Emperador fantasma, decidido a destruir cualquier amenaza a su poder...</string>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="BMM-gG-Fma">
+                                        <rect key="frame" x="15" y="259" width="328" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="k6P-6d-xGG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8B-A6-D7h">
+                                        <rect key="frame" x="353" y="259" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6mC-q9-kmn"/>
+                                            <constraint firstAttribute="width" constant="46" id="Dlk-Xs-L2c"/>
+                                        </constraints>
+                                        <state key="normal" image="hand.thumbsup" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="cHx-uf-3wR" firstAttribute="leading" secondItem="Vu1-bx-87f" secondAttribute="leading" id="2hK-dx-HbP"/>
+                                    <constraint firstItem="IMA-9x-0Gr" firstAttribute="top" secondItem="cHx-uf-3wR" secondAttribute="bottom" constant="10" id="5nT-NA-ocK"/>
+                                    <constraint firstItem="y8B-A6-D7h" firstAttribute="top" secondItem="IMA-9x-0Gr" secondAttribute="bottom" id="6gv-xU-17Q"/>
+                                    <constraint firstItem="cHx-uf-3wR" firstAttribute="top" secondItem="Vu1-bx-87f" secondAttribute="top" id="A68-IE-fHz"/>
+                                    <constraint firstItem="LZo-Gf-gMy" firstAttribute="leading" secondItem="Vu1-bx-87f" secondAttribute="leading" constant="15" id="BxL-yx-du8"/>
+                                    <constraint firstAttribute="bottom" secondItem="cHx-uf-3wR" secondAttribute="bottom" multiplier="2.5" id="GAc-2d-H6n"/>
+                                    <constraint firstAttribute="bottom" secondItem="LZo-Gf-gMy" secondAttribute="bottom" constant="10" id="HlE-jE-8A0"/>
+                                    <constraint firstAttribute="trailing" secondItem="LZo-Gf-gMy" secondAttribute="trailing" constant="15" id="Lqg-79-fEL"/>
+                                    <constraint firstAttribute="trailing" secondItem="cHx-uf-3wR" secondAttribute="trailing" id="Mw2-SY-GnT"/>
+                                    <constraint firstAttribute="trailing" secondItem="y8B-A6-D7h" secondAttribute="trailing" constant="15" id="PZ6-iD-u9U"/>
+                                    <constraint firstItem="BMM-gG-Fma" firstAttribute="leading" secondItem="Vu1-bx-87f" secondAttribute="leading" constant="15" id="SMd-ae-dnY"/>
+                                    <constraint firstItem="IMA-9x-0Gr" firstAttribute="leading" secondItem="Vu1-bx-87f" secondAttribute="leading" constant="15" id="Vmv-h0-sww"/>
+                                    <constraint firstItem="LZo-Gf-gMy" firstAttribute="top" secondItem="BMM-gG-Fma" secondAttribute="bottom" constant="6" id="aKx-xh-yru"/>
+                                    <constraint firstItem="y8B-A6-D7h" firstAttribute="leading" secondItem="BMM-gG-Fma" secondAttribute="trailing" constant="10" id="fji-aR-Y0w"/>
+                                    <constraint firstItem="BMM-gG-Fma" firstAttribute="top" secondItem="IMA-9x-0Gr" secondAttribute="bottom" id="isw-Db-JDQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IMA-9x-0Gr" secondAttribute="trailing" constant="15" id="v7m-0E-5RL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHM-ND-FqI">
+                                <rect key="frame" x="0.0" y="448" width="414" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Best of the BEST!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka0-iK-bhs">
+                                        <rect key="frame" x="15" y="10" width="384" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="krl-xq-4uN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WvX-Br-Q8W">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="354"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lgI-Hv-ZY2">
+                                            <size key="itemSize" width="414" height="354"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Cell" id="TbC-nL-xnn">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1m3-hZ-f71">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-Tz-AAf">
+                                                            <rect key="frame" x="15" y="8" width="161.5" height="208.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="dYM-Tz-AAf" secondAttribute="height" multiplier="161:208" id="cjm-ht-8zN"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crepusculo: Eclipse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7Lf-Qm-f3H">
+                                                            <rect key="frame" x="186.5" y="8" width="212.5" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="e9a-Bn-xPp"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma Español" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCm-yw-C0w">
+                                                            <rect key="frame" x="186.5" y="80" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="uBX-uc-EYI"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para todas las edades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-RM-iis">
+                                                            <rect key="frame" x="186.5" y="119" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="3z2-qs-lCm"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hSK-G4-Ptq">
+                                                            <rect key="frame" x="186" y="169" width="213" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="dYN-RM-iis" secondAttribute="trailing" constant="15" id="1tt-0C-BXG"/>
+                                                        <constraint firstItem="dYM-Tz-AAf" firstAttribute="leading" secondItem="1m3-hZ-f71" secondAttribute="leading" constant="15" id="5mx-fa-6Jc"/>
+                                                        <constraint firstItem="dYN-RM-iis" firstAttribute="top" secondItem="DCm-yw-C0w" secondAttribute="bottom" constant="8" id="Ar1-wk-Aai"/>
+                                                        <constraint firstItem="7Lf-Qm-f3H" firstAttribute="leading" secondItem="dYM-Tz-AAf" secondAttribute="trailing" constant="10" id="Fos-ip-OWB"/>
+                                                        <constraint firstItem="dYM-Tz-AAf" firstAttribute="top" secondItem="1m3-hZ-f71" secondAttribute="top" constant="8" id="LZv-SV-924"/>
+                                                        <constraint firstItem="DCm-yw-C0w" firstAttribute="top" secondItem="7Lf-Qm-f3H" secondAttribute="bottom" constant="8" id="dcN-kF-I5z"/>
+                                                        <constraint firstItem="dYN-RM-iis" firstAttribute="leading" secondItem="dYM-Tz-AAf" secondAttribute="trailing" constant="10" id="e8u-xd-phZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DCm-yw-C0w" secondAttribute="trailing" constant="15" id="fXC-5Y-xHL"/>
+                                                        <constraint firstItem="dYM-Tz-AAf" firstAttribute="width" secondItem="1m3-hZ-f71" secondAttribute="width" multiplier="0.388889" constant="0.29999999999999999" id="l0X-vA-fVp"/>
+                                                        <constraint firstItem="7Lf-Qm-f3H" firstAttribute="top" secondItem="1m3-hZ-f71" secondAttribute="top" constant="8" id="qFA-Ku-u5f"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7Lf-Qm-f3H" secondAttribute="trailing" constant="15" id="x4c-5Y-i4s"/>
+                                                        <constraint firstItem="DCm-yw-C0w" firstAttribute="leading" secondItem="dYM-Tz-AAf" secondAttribute="trailing" constant="10" id="zTn-Re-3If"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="414" height="354"/>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="" id="Ooe-Gf-6NC">
+                                                <rect key="frame" x="424" y="0.0" width="414" height="354"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Iyc-6N-QDc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dora-and-the-lost-city-of-gold-movie-poster-1000779403" translatesAutoresizingMaskIntoConstraints="NO" id="eGc-vu-Nlm">
+                                                            <rect key="frame" x="15" y="8" width="161.5" height="208.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="eGc-vu-Nlm" secondAttribute="height" multiplier="161:208" id="dES-r7-jvQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dora: La Ciudad de Oro Perdida" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Dqe-m4-Lfx">
+                                                            <rect key="frame" x="186.5" y="8" width="212.5" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="VGb-cq-82u"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma Español" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARp-bA-Vfc">
+                                                            <rect key="frame" x="186.5" y="80" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="pcY-Mr-1PK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para todas las edades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wT-I0-f2C">
+                                                            <rect key="frame" x="186.5" y="119" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="leG-8g-vl5"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6wp-We-CZf">
+                                                            <rect key="frame" x="186" y="169" width="213" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="6wT-I0-f2C" secondAttribute="trailing" constant="15" id="0cy-oG-uFS"/>
+                                                        <constraint firstItem="Dqe-m4-Lfx" firstAttribute="top" secondItem="Iyc-6N-QDc" secondAttribute="top" constant="8" id="C2r-G4-4tJ"/>
+                                                        <constraint firstItem="eGc-vu-Nlm" firstAttribute="top" secondItem="Iyc-6N-QDc" secondAttribute="top" constant="8" id="CfE-bF-JNG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Dqe-m4-Lfx" secondAttribute="trailing" constant="15" id="D5d-Bs-SG7"/>
+                                                        <constraint firstItem="6wT-I0-f2C" firstAttribute="top" secondItem="ARp-bA-Vfc" secondAttribute="bottom" constant="8" id="Gje-IB-BYR"/>
+                                                        <constraint firstItem="6wT-I0-f2C" firstAttribute="leading" secondItem="eGc-vu-Nlm" secondAttribute="trailing" constant="10" id="IF7-m7-gP4"/>
+                                                        <constraint firstItem="Dqe-m4-Lfx" firstAttribute="leading" secondItem="eGc-vu-Nlm" secondAttribute="trailing" constant="10" id="Xa7-ab-0OY"/>
+                                                        <constraint firstItem="eGc-vu-Nlm" firstAttribute="leading" secondItem="Iyc-6N-QDc" secondAttribute="leading" constant="15" id="ZiT-SI-Pb6"/>
+                                                        <constraint firstItem="ARp-bA-Vfc" firstAttribute="top" secondItem="Dqe-m4-Lfx" secondAttribute="bottom" constant="8" id="giW-dA-Fkt"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ARp-bA-Vfc" secondAttribute="trailing" constant="15" id="qen-RY-Ke0"/>
+                                                        <constraint firstItem="ARp-bA-Vfc" firstAttribute="leading" secondItem="eGc-vu-Nlm" secondAttribute="trailing" constant="10" id="rq9-QX-N9r"/>
+                                                        <constraint firstItem="eGc-vu-Nlm" firstAttribute="width" secondItem="Iyc-6N-QDc" secondAttribute="width" multiplier="0.388889" constant="0.29999999999999999" id="snm-jR-nbB"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="414" height="354"/>
+                                            </collectionViewCell>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="" id="1VL-2X-KEQ">
+                                                <rect key="frame" x="848" y="0.0" width="414" height="354"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0O4-Lf-Rop">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jaws" translatesAutoresizingMaskIntoConstraints="NO" id="I04-Z7-WC1">
+                                                            <rect key="frame" x="15" y="8" width="161.5" height="208.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="I04-Z7-WC1" secondAttribute="height" multiplier="161:208" id="JlF-EN-DvB"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiburón" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="C7y-1m-7bf">
+                                                            <rect key="frame" x="186.5" y="8" width="212.5" height="64"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="64" id="JaW-bd-I0L"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma Ingles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2k8-j6-oEj">
+                                                            <rect key="frame" x="186.5" y="80" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="tTt-ov-hlR"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adultos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RId-qh-BxJ">
+                                                            <rect key="frame" x="186.5" y="119" width="212.5" height="31"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="31" id="PDN-Lh-TBO"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="VNT-hc-Xpc">
+                                                            <rect key="frame" x="186" y="169" width="213" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="C7y-1m-7bf" firstAttribute="leading" secondItem="I04-Z7-WC1" secondAttribute="trailing" constant="10" id="3EJ-9x-zyW"/>
+                                                        <constraint firstItem="I04-Z7-WC1" firstAttribute="leading" secondItem="0O4-Lf-Rop" secondAttribute="leading" constant="15" id="WY8-k3-lav"/>
+                                                        <constraint firstAttribute="trailing" secondItem="C7y-1m-7bf" secondAttribute="trailing" constant="15" id="Z0Y-IO-gok"/>
+                                                        <constraint firstItem="C7y-1m-7bf" firstAttribute="top" secondItem="0O4-Lf-Rop" secondAttribute="top" constant="8" id="Zjx-XZ-AqR"/>
+                                                        <constraint firstItem="RId-qh-BxJ" firstAttribute="leading" secondItem="I04-Z7-WC1" secondAttribute="trailing" constant="10" id="bJp-ny-Rtq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2k8-j6-oEj" secondAttribute="trailing" constant="15" id="dZV-d8-xo2"/>
+                                                        <constraint firstItem="I04-Z7-WC1" firstAttribute="width" secondItem="0O4-Lf-Rop" secondAttribute="width" multiplier="0.388889" constant="0.29999999999999999" id="iXh-LA-jnB"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RId-qh-BxJ" secondAttribute="trailing" constant="15" id="jIr-PT-Wz6"/>
+                                                        <constraint firstItem="2k8-j6-oEj" firstAttribute="leading" secondItem="I04-Z7-WC1" secondAttribute="trailing" constant="10" id="sm0-ru-Wsd"/>
+                                                        <constraint firstItem="I04-Z7-WC1" firstAttribute="top" secondItem="0O4-Lf-Rop" secondAttribute="top" constant="8" id="uQM-fI-BmV"/>
+                                                        <constraint firstItem="2k8-j6-oEj" firstAttribute="top" secondItem="C7y-1m-7bf" secondAttribute="bottom" constant="8" id="xLd-zR-jwk"/>
+                                                        <constraint firstItem="RId-qh-BxJ" firstAttribute="top" secondItem="2k8-j6-oEj" secondAttribute="bottom" constant="8" id="xM7-oe-9BG"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="414" height="354"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="WvX-Br-Q8W" firstAttribute="top" secondItem="Ka0-iK-bhs" secondAttribute="bottom" constant="10" id="1cA-MY-m64"/>
+                                    <constraint firstItem="WvX-Br-Q8W" firstAttribute="leading" secondItem="yHM-ND-FqI" secondAttribute="leading" id="DlA-jo-6xB"/>
+                                    <constraint firstItem="Ka0-iK-bhs" firstAttribute="leading" secondItem="yHM-ND-FqI" secondAttribute="leading" constant="15" id="Gfo-7h-4HE"/>
+                                    <constraint firstAttribute="trailing" secondItem="WvX-Br-Q8W" secondAttribute="trailing" id="H6Z-Rk-6lr"/>
+                                    <constraint firstAttribute="bottom" secondItem="WvX-Br-Q8W" secondAttribute="bottom" id="QO1-vm-z3d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ka0-iK-bhs" secondAttribute="trailing" constant="15" id="jXF-JR-1Va"/>
+                                    <constraint firstItem="Ka0-iK-bhs" firstAttribute="top" secondItem="yHM-ND-FqI" secondAttribute="top" constant="10" id="vey-sx-F61"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vu1-bx-87f" firstAttribute="height" secondItem="gLb-4h-fcb" secondAttribute="height" multiplier="0.5" id="1Z6-4e-5Pj"/>
+                            <constraint firstItem="yU4-Gc-Qpk" firstAttribute="trailing" secondItem="yHM-ND-FqI" secondAttribute="trailing" id="1tA-4e-Hmf"/>
+                            <constraint firstItem="Vu1-bx-87f" firstAttribute="top" secondItem="gLb-4h-fcb" secondAttribute="top" id="4ML-gB-54v"/>
+                            <constraint firstItem="yHM-ND-FqI" firstAttribute="leading" secondItem="yU4-Gc-Qpk" secondAttribute="leading" id="TcN-m1-AN0"/>
+                            <constraint firstItem="yU4-Gc-Qpk" firstAttribute="bottom" secondItem="yHM-ND-FqI" secondAttribute="bottom" id="UeG-TR-Yl8"/>
+                            <constraint firstItem="Vu1-bx-87f" firstAttribute="trailing" secondItem="yU4-Gc-Qpk" secondAttribute="trailing" id="Xhd-mv-A3d"/>
+                            <constraint firstItem="Vu1-bx-87f" firstAttribute="leading" secondItem="yU4-Gc-Qpk" secondAttribute="leading" id="dlN-ii-IKJ"/>
+                            <constraint firstItem="yHM-ND-FqI" firstAttribute="top" secondItem="Vu1-bx-87f" secondAttribute="bottom" id="gat-6J-ZU9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yU4-Gc-Qpk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bnr-hx-nNi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1J-IX-pXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979.7101449275365" y="825.66964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dora-and-the-lost-city-of-gold-movie-poster-1000779403" width="384" height="599"/>
+        <image name="download" width="183" height="275"/>
+        <image name="film" catalog="system" width="64" height="46"/>
+        <image name="hand.thumbsup" catalog="system" width="64" height="64"/>
+        <image name="jaws" width="600" height="900"/>
+        <image name="starwars" width="360" height="140"/>
+    </resources>
+</document>
